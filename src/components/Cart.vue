@@ -1,0 +1,19 @@
+<template>
+  
+</template>
+
+<script>
+export default {
+    name: "cart",
+    data() {
+        return {
+            
+        }
+    }
+}
+</script>
+
+<style>
+@import url(../css/common.css);
+</style>
+

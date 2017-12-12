@@ -1,0 +1,69 @@
+{
+    "channels": [
+        {
+            "name": "推荐",
+            "path": "recommend",
+            "contents": {
+                "hotProducts": [{
+                    "name": "日系米色毛绒地毯",
+                    "price": 340,
+                    "img": "static/1.jpg"
+                },{
+                    "name": "冬季多色亮彩口红套装",
+                    "price": 592,
+                    "img": "static/2.jpg"
+                },{
+                    "name": "早餐养生馒头",
+                    "price": 13,
+                    "img": "static/3.jpg"
+                },{
+                    "name": "时尚黑色瓷碗",
+                    "price": 34,
+                    "img": "static/4.jpg"
+                },{
+                    "name": "马来西亚进口大米",
+                    "price": 87,
+                    "img": "static/5.jpg"
+                },{
+                    "name": "白瓷火锅砂锅",
+                    "price": 178,
+                    "img": "static/6.jpg"
+                }],
+                "recommendProducts": [{
+                    "name": "日系清新玻璃杯",
+                    "price": 23,
+                    "img": "static/7.jpg"
+                },{
+                    "name": "陪伴咖啡的甜美软糖",
+                    "price": 31,
+                    "img": "static/8.jpg"
+                },{
+                    "name": "纯色简约收纳篮",
+                    "price": 65,
+                    "img": "static/9.jpg"
+                },{
+                    "name": "冬季北欧床品套件",
+                    "price": 234,
+                    "img": "static/10.jpg"
+                },{
+                    "name": "日系清新情侣保温杯",
+                    "price": 142,
+                    "img": "static/11.jpg"
+                },{
+                    "name": "黑色简约保暖打底裤",
+                    "price": 72,
+                    "img": "static/12.jpg"
+                }]
+            }
+        },{
+            "name": "衣服",
+            "path": "clothing"
+        },{
+            "name": "家居",
+            "path": "furniture"
+        },{
+            "name": "食品",
+            "path": "food"
+        }
+    ]
+}
