@@ -3,11 +3,13 @@
     <h3 class="title">{{title}}</h3>
     <div class="imgs">
         <div class="img" :key="product.name" v-for="product in products">
-            <img :src="product.img">
-            <div class="desc">
-                <span class="price">¥{{product.price}}</span>
-                <span class="name">{{product.name}}</span>
-            </div>
+            <router-link class="link" to="/product">
+                <img :src="product.img">
+                <div class="desc">
+                    <span class="price">¥{{product.price}}</span>
+                    <span class="name">{{product.name}}</span>
+                </div>
+            </router-link>
         </div>
     </div>
 </div>
@@ -95,5 +97,9 @@ export default {
     font-weight: lighter;
     text-align: center;
     color: $red;
+}
+
+.link {
+    text-decoration: none;
 }
 </style>

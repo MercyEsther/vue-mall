@@ -3,7 +3,9 @@
     <Search/>
     <Navbar/>
     <Cart/>
-    <router-view></router-view>
+    <transition name="fade">
+        <router-view></router-view>
+    </transition>
 </div>
 </template>
 
@@ -25,6 +27,12 @@ export default {
 </script>
 
 <style scoped>
-
+.fade-enter-active, .fade-leave-active {
+    transition: all .2s ease;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+    transform: translateX(5rem);
+}
 </style>
 

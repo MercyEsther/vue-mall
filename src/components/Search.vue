@@ -61,6 +61,8 @@ input {
     height: 1.8rem;
     padding-left: 1rem;
     font-size: 0.8rem;
+    border-radius: 0px;
+    box-shadow: none;
     border: 1px solid #ddd;
     background-color: white;
 }
@@ -85,6 +87,7 @@ button {
     right: 1rem;
     width: 3rem;
     height: 100%;
+    border: 1px solid $middle_grey;
     background-color: white;
 }
 

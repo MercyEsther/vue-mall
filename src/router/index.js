@@ -6,6 +6,7 @@ const Recommend = () => import("../pages/Recommend");
 const Clothing = () => import("../pages/Clothing");
 const Furniture = () => import("../pages/Furniture");
 const Food = () => import("../pages/Food");
+const Product = () => import("../pages/Product");
 
 Vue.use(Router)
 
@@ -15,6 +16,9 @@ const routes = [
     name: 'app', 
     component: App,
     children: [{
+      path: '',
+      redirect: '/recommend'
+    },{
       path: 'recommend',
       name: 'recommend',
       component: Recommend
@@ -30,12 +34,16 @@ const routes = [
       path: 'food',
       name: 'food',
       component: Food
+    },{
+        path: 'product',
+        name: 'product',
+        component: Product
     }]
   }
 ]
 
 export default new Router({
   routes,
-  mode: "history",
+  mode: "hash",
   base: __dirname
 })

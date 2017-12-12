@@ -1,3 +1,5 @@
 export default {
-    page: 'home'
+    page: 'home',
+    cart: [],
+    amount: 0
 }
