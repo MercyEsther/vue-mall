@@ -2,7 +2,7 @@
 <div id="cart">
     <div class="top" @click="toTop"><i class="fa up fa-chevron-up"></i></div>
     <div class="shoppingCart">
-        <i class="fa fa-shopping-cart" :class="{animate: isAnimate}"></i>
+        <i class="fa fa-shopping-cart" :class="{animate: isAnimate}" @click="toCart"></i>
     </div>
     <div class="bottom" @click="toBottom"><i class="fa down fa-chevron-down"></i></div>
 </div>
@@ -49,6 +49,10 @@ export default {
         toBottom() {
             document.body.scrollTop = document.body.clientHeight;
             document.documentElement.scrollTop = document.documentElement.clientHeight;
+        },
+
+        toCart() {
+            this.$router.push("/payment")
         }
     }
 }

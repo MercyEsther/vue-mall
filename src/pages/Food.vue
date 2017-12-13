@@ -6,7 +6,6 @@
 
 <script>
 import Footer from "../components/Footer";
-import {mapMutations} from "vuex";
 
 export default {
     name: 'food',
@@ -18,7 +17,6 @@ export default {
     },
 
     created() {
-        this.setPage("food");
     },
 
     mounted() {
@@ -27,7 +25,6 @@ export default {
 
     methods: {
         ...mapMutations([
-            'setPage'
         ])
     }
 }

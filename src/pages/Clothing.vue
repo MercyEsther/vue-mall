@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import {mapMutations} from "vuex";
 import Footer from "../components/Footer";
 import Panel from "../components/Panel";
 
@@ -27,9 +26,6 @@ export default {
     },
 
     methods: {
-        ...mapMutations([
-            'setPage'
-        ])
     }
 }
 </script>

@@ -7,6 +7,8 @@ const Clothing = () => import("../pages/Clothing");
 const Furniture = () => import("../pages/Furniture");
 const Food = () => import("../pages/Food");
 const Product = () => import("../pages/Product");
+const Payment = () => import("../pages/Payment");
+const Address = () => import("../pages/Address");
 
 Vue.use(Router)
 
@@ -39,6 +41,14 @@ const routes = [
         name: 'product',
         component: Product
     }]
+  },{
+    path: '/payment',
+    name: 'payment',
+    component: Payment
+  },{
+    path: '/address',
+    name: "address",
+    component: Address
   }
 ]
 

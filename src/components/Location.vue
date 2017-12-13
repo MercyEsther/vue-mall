@@ -4,7 +4,7 @@
         <i class="fa fa-map-marker"></i>
         <span class="city">{{city}}</span>
     </p>
-    <div class="wait" ref="wait" v-if="city == ''"></div>
+    <div class="wait" ref="wait" v-if="wait"></div>
 </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
             lng: '',
             lat: '',
             city: '',
-            timer: ''
+            wait: true
         }
     },
 
@@ -35,6 +35,7 @@ export default {
                 geoc.getLocation(point, function(rs){
                     var addComp = rs.addressComponents;
                     self.city = addComp.city;
+                    self.wait = false;
                 });        
             }
             else {
@@ -45,17 +46,16 @@ export default {
 
     mounted(){
         let r = 0;
-        this.timer = setInterval(() => {
-            r += 180;
-            let rotate = "rotate(" + r + "deg)";
-            this.$refs.wait.style.transform = rotate;
+        var timer = setInterval(() => {
+            if (!this.wait) {
+                clearInterval(timer);
+            }
+            else {
+                r += 180;
+                let rotate = "rotate(" + r + "deg)";
+                this.$refs.wait.style.transform = rotate;
+            }
         }, 1000);
-    },
-
-    watch: {
-        city() {
-            clearInterval(this.timer);
-        }
     }
 }
 </script>

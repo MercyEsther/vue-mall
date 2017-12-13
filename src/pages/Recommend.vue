@@ -46,7 +46,6 @@ export default {
     },
 
     created() {
-        this.setPage("recommend");
     },
 
     mounted() {
@@ -71,7 +70,6 @@ export default {
 
     methods: {
         ...mapMutations([
-            'setPage'
         ])
     }
 }
